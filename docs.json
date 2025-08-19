@@ -16,7 +16,18 @@
         "groups": [
           {
             "group": "はじめに",
-            "pages": ["index", "quickstart"]
+            "pages": ["index"]
+          },
+          {
+            "group": "クイックスタートガイド",
+            "pages": [
+              "quickstart-guide/01-signup",
+              "quickstart-guide/02-setup",
+              "quickstart-guide/03-products",
+              "quickstart-guide/04-inventory",
+              "quickstart-guide/05-reports",
+              "quickstart-guide/06-advanced"
+            ]
           }
         ]
       },
