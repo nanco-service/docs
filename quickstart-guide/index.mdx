@@ -3,6 +3,35 @@ title: 'あなたに最適なコースを選択'
 description: 'nancoのクイックスタートガイドは、あなたの状況や目的に応じて3つのコースから選択できます。'
 ---
 
+<style>
+{`
+.custom-bullet-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+/* Card title styling */
+[data-mintlify-card] h3 {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+}
+`}
+</style>
+
 
 <Columns cols={2}>
   <Card
@@ -11,18 +40,20 @@ description: 'nancoのクイックスタートガイドは、あなたの状況�
   >
     **「とにかく、一番手軽に始めたい」**
 
-    **対象者**
-
-    - とにかく少ない手間で、直ぐに使い始めたい
-    - 扱うアイテムは20～50品程
-    - 管理するのは基本的に１人
-
-    **このコースの内容**
-
-    - 商品（アイテム）の個別追加
-    - 属性項目の追加（価格、メーカーなど）
-    - 一括でのアイテム追加（CSV/Excel）
-    - 基本的な在庫管理操作
+    ## 対象者
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> とにかく少ない手間で、直ぐに使い始めたい</li>
+      <li><span className="checkmark">✓</span> 扱うアイテムは20～50品程</li>
+      <li><span className="checkmark">✓</span> 管理するのは基本的に１人</li>
+    </ul>
+<br/>
+    ## このコースの内容
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> 商品（アイテム）の個別追加</li>
+      <li><span className="checkmark">✓</span> 属性項目の追加（価格、メーカーなど）</li>
+      <li><span className="checkmark">✓</span> 一括でのアイテム追加（CSV/Excel）</li>
+      <li><span className="checkmark">✓</span> 基本的な在庫管理操作</li>
+    </ul>
   </Card>
 
   <Card
@@ -31,25 +62,28 @@ description: 'nancoのクイックスタートガイドは、あなたの状況�
   >
     **「棚卸をクイックに頻繁に実施したい。できるだけ在庫数のズレを無くしたい。」**
 
-    **対象者**
-
-    - 棚卸を頻繁に行う
-    - SKUは150種類～500種類ほど
-    - 数名で管理
-
-    **準備**
-
-    - エクセルやCSVなど商品のデータ
-    - 商品のバーコードの情報（あるとベター）
-
-    **このコースの内容**
-
-    - 商品（アイテム）の個別追加
-    - 属性項目の追加（価格、メーカーなど）
-    - 一括でのアイテム追加（CSV/Excel）
-    - メンバー追加とチーム管理
-    - スマートフォンアプリの活用
-    - バーコード機能の活用
+    ## 対象者
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> 棚卸を頻繁に行う</li>
+      <li><span className="checkmark">✓</span> SKUは150種類～500種類ほど</li>
+      <li><span className="checkmark">✓</span> 数名で管理</li>
+    </ul>
+<br/>
+    ## 準備
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> エクセルやCSVなど商品のデータ</li>
+      <li><span className="checkmark">✓</span> 商品のバーコードの情報（あるとベター）</li>
+    </ul>
+<br/>
+    ## このコースの内容
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> 商品（アイテム）の個別追加</li>
+      <li><span className="checkmark">✓</span> 属性項目の追加（価格、メーカーなど）</li>
+      <li><span className="checkmark">✓</span> 一括でのアイテム追加（CSV/Excel）</li>
+      <li><span className="checkmark">✓</span> メンバー追加とチーム管理</li>
+      <li><span className="checkmark">✓</span> スマートフォンアプリの活用</li>
+      <li><span className="checkmark">✓</span> バーコード機能の活用</li>
+    </ul>
   </Card>
 
   <Card
@@ -58,24 +92,27 @@ description: 'nancoのクイックスタートガイドは、あなたの状況�
   >
     **「一品モノも多いので写真が大事。管理数もとても多い…！！」**
 
-    **対象者**
-
-    - 商品の識別を外観に頼ることが多い
-    - 1000種類以上
-    - 多数のスタッフで管理（10名）
-    - LINE等グループツールで報告用に商品画像をシェアしたい
-
-    **条件**
-
-    - 商品のエクセルデータがある
-
-    **このコースの内容**
-
-    - 商品（アイテム）の個別追加
-    - 一括でのアイテム追加（CSV/Excel）
-    - メンバー追加とチーム管理
-    - スマートフォンアプリの活用
-    - 商品写真の登録（PC・スマホ）
-    - グリッド表示での商品管理
+    ## 対象者
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> 商品の識別を外観に頼ることが多い</li>
+      <li><span className="checkmark">✓</span> 1000種類以上</li>
+      <li><span className="checkmark">✓</span> 多数のスタッフで管理（10名）</li>
+      <li><span className="checkmark">✓</span> LINE等グループツールで報告用に商品画像をシェアしたい</li>
+    </ul>
+<br/>
+    ## 条件
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> 商品のエクセルデータがある</li>
+    </ul>
+<br/>
+    ## このコースの内容
+    <ul className="custom-bullet-list">
+      <li><span className="checkmark">✓</span> 商品（アイテム）の個別追加</li>
+      <li><span className="checkmark">✓</span> 一括でのアイテム追加（CSV/Excel）</li>
+      <li><span className="checkmark">✓</span> メンバー追加とチーム管理</li>
+      <li><span className="checkmark">✓</span> スマートフォンアプリの活用</li>
+      <li><span className="checkmark">✓</span> 商品写真の登録（PC・スマホ）</li>
+      <li><span className="checkmark">✓</span> グリッド表示での商品管理</li>
+    </ul>
   </Card>
 </Columns>
