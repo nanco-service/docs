@@ -33,7 +33,7 @@
             ]
           },
           {
-            "group": "Bコース：爆速棚卸コース",
+            "group": "Bコース：バーコード棚卸コース",
             "pages": [
               "quickstart-guide/course-b/01-item-add-individual",
               "quickstart-guide/course-b/02-attribute-add",
