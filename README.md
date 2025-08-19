@@ -1,44 +1,33 @@
-# Mintlify Starter Kit
+# nanco ドキュメント
 
-Use the starter kit to get your docs deployed and ready to customize.
+nancoの在庫管理クラウドサービスのドキュメントサイトです。
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+このリポジトリには以下の内容が含まれています：
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- ガイドページ
+- ナビゲーション設定
+- カスタマイズ設定
+- マニュアルページ
+- 人気コンポーネントの使用例
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+**[クイックスタートガイドに従ってください](/quickstart)**
 
-## Development
+## 開発環境
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+ローカルでドキュメントの変更をプレビューするには、[Mintlify CLI](https://www.npmjs.com/package/mint)をインストールしてください。インストールには以下のコマンドを使用します：
 
 ```
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+`docs.json`が配置されているドキュメントのルートディレクトリで以下のコマンドを実行してください：
 
 ```
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+ローカルプレビューは `http://localhost:3000` で確認できます。
 
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
-- [Mintlify community](https://mintlify.com/community)
+### リソース
+- [Mintlify ドキュメント](https://mintlify.com/docs)
+- [Mintlify コミュニティ](https://mintlify.com/community)
