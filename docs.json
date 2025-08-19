@@ -21,14 +21,35 @@
             "pages": ["index"]
           },
           {
-            "group": "クイックスタートガイド",
+            "group": "コース選択",
+            "pages": ["quickstart-guide/index"]
+          },
+          {
+            "group": "Aコース：お手軽コース",
             "pages": [
-              "quickstart-guide/01-signup",
-              "quickstart-guide/02-setup",
-              "quickstart-guide/03-products",
-              "quickstart-guide/04-inventory",
-              "quickstart-guide/05-reports",
-              "quickstart-guide/06-advanced"
+              "quickstart-guide/course-a/01-item-add-individual",
+              "quickstart-guide/course-a/02-attribute-add",
+              "quickstart-guide/course-a/03-item-add-bulk"
+            ]
+          },
+          {
+            "group": "Bコース：爆速棚卸コース",
+            "pages": [
+              "quickstart-guide/course-b/01-item-add-individual",
+              "quickstart-guide/course-b/02-attribute-add",
+              "quickstart-guide/course-b/03-item-add-bulk",
+              "quickstart-guide/course-b/04-member-add",
+              "quickstart-guide/course-b/05-barcode-app"
+            ]
+          },
+          {
+            "group": "Cコース：写真重視コース",
+            "pages": [
+              "quickstart-guide/course-c/01-item-add-individual",
+              "quickstart-guide/course-c/02-item-add-bulk",
+              "quickstart-guide/course-c/03-member-add",
+              "quickstart-guide/course-c/04-photo-app",
+              "quickstart-guide/course-c/05-grid-view"
             ]
           }
         ]
