@@ -142,4 +142,130 @@ export function PhotoRegistration({ course }) {
 export function GridViewExplanation() {
   const content = require('./grid-view-explanation.mdx').default;
   return React.createElement(content);
-} 
+}
+
+// コースナビゲーションコンポーネント
+export function CourseNavigation({ currentCourse, currentLesson }) {
+  // course-config.jsonを参照
+  const courseConfig = {
+    "courses": {
+      "a": {
+        "name": "Aコース",
+        "description": "お手軽に始める",
+        "color": "#4A90E2",
+        "lessons": [
+          { "id": "01-item-add-individual", "title": "個別アイテム追加" },
+          { "id": "02-attribute-add", "title": "属性項目追加" },
+          { "id": "03-item-add-bulk", "title": "一括アイテム追加" }
+        ]
+      },
+      "b": {
+        "name": "Bコース",
+        "description": "棚卸効率重視",
+        "color": "#7ED321",
+        "lessons": [
+          { "id": "01-item-add-individual", "title": "個別アイテム追加" },
+          { "id": "02-attribute-add", "title": "属性項目追加" },
+          { "id": "03-item-add-bulk", "title": "一括アイテム追加" },
+          { "id": "04-member-add", "title": "メンバー追加" },
+          { "id": "05-barcode-app", "title": "バーコードアプリ" }
+        ]
+      },
+      "c": {
+        "name": "Cコース",
+        "description": "写真重視",
+        "color": "#F5A623",
+        "lessons": [
+          { "id": "01-item-add-individual", "title": "個別アイテム追加" },
+          { "id": "02-item-add-bulk", "title": "一括アイテム追加" },
+          { "id": "03-member-add", "title": "メンバー追加" },
+          { "id": "04-photo-app", "title": "写真アプリ" },
+          { "id": "05-grid-view", "title": "グリッド表示" }
+        ]
+      }
+    }
+  };
+  
+  const courses = courseConfig.courses;
+  const otherCourses = Object.keys(courses).filter(courseId => courseId !== currentCourse);
+  
+  return (
+    <div style={{ 
+      marginTop: '40px', 
+      padding: '20px', 
+      backgroundColor: '#f8f9fa', 
+      borderRadius: '8px',
+      border: '1px solid #e9ecef'
+    }}>
+      <h2 style={{ 
+        marginTop: 0, 
+        marginBottom: '20px', 
+        fontSize: '18px', 
+        color: '#495057',
+        textAlign: 'center'
+      }}>
+        他のコースに移動
+      </h2>
+      
+      <div style={{ 
+        display: 'flex', 
+        gap: '20px', 
+        justifyContent: 'center', 
+        flexWrap: 'wrap' 
+      }}>
+        {otherCourses.map(courseId => {
+          const course = courses[courseId];
+          return (
+            <div key={courseId} style={{
+              backgroundColor: 'white',
+              padding: '20px',
+              borderRadius: '8px',
+              border: `2px solid ${course.color}`,
+              minWidth: '200px',
+              textAlign: 'center',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+            }}>
+              <h3 style={{
+                margin: '0 0 10px 0',
+                color: course.color,
+                fontSize: '16px',
+                fontWeight: 'bold'
+              }}>
+                {course.name}
+              </h3>
+              
+              <p style={{
+                margin: '0 0 15px 0',
+                fontSize: '14px',
+                color: '#6c757d',
+                lineHeight: '1.4'
+              }}>
+                {course.description}
+              </p>
+              
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '8px'
+              }}>
+                {course.lessons.map(lesson => (
+                  <a key={lesson.id} href={`/quickstart-guide/course-${courseId}/${lesson.id}`} style={{
+                    display: 'block',
+                    padding: '8px 12px',
+                    backgroundColor: course.color,
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '4px',
+                    fontSize: '13px'
+                  }}>
+                    {lesson.title}
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

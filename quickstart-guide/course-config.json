@@ -1,0 +1,90 @@
+{
+  "courses": {
+    "a": {
+      "name": "Aコース",
+      "description": "お手軽に始める",
+      "color": "#4A90E2",
+      "lessons": [
+        {
+          "id": "01-item-add-individual",
+          "title": "個別アイテム追加",
+          "description": "商品を1つずつ追加する方法"
+        },
+        {
+          "id": "02-attribute-add",
+          "title": "属性項目追加",
+          "description": "商品の詳細情報を追加する方法"
+        },
+        {
+          "id": "03-item-add-bulk",
+          "title": "一括アイテム追加",
+          "description": "複数の商品を一度に追加する方法"
+        }
+      ]
+    },
+    "b": {
+      "name": "Bコース",
+      "description": "棚卸効率重視",
+      "color": "#7ED321",
+      "lessons": [
+        {
+          "id": "01-item-add-individual",
+          "title": "個別アイテム追加",
+          "description": "商品を1つずつ追加する方法"
+        },
+        {
+          "id": "02-attribute-add",
+          "title": "属性項目追加",
+          "description": "商品の詳細情報を追加する方法"
+        },
+        {
+          "id": "03-item-add-bulk",
+          "title": "一括アイテム追加",
+          "description": "複数の商品を一度に追加する方法"
+        },
+        {
+          "id": "04-member-add",
+          "title": "メンバー追加",
+          "description": "チームメンバーを追加する方法"
+        },
+        {
+          "id": "05-barcode-app",
+          "title": "バーコードアプリ",
+          "description": "スマートフォンでバーコードを読み取る方法"
+        }
+      ]
+    },
+    "c": {
+      "name": "Cコース",
+      "description": "写真重視",
+      "color": "#F5A623",
+      "lessons": [
+        {
+          "id": "01-item-add-individual",
+          "title": "個別アイテム追加",
+          "description": "商品を1つずつ追加する方法"
+        },
+        {
+          "id": "02-item-add-bulk",
+          "title": "一括アイテム追加",
+          "description": "複数の商品を一度に追加する方法"
+        },
+        {
+          "id": "03-member-add",
+          "title": "メンバー追加",
+          "description": "チームメンバーを追加する方法"
+        },
+        {
+          "id": "04-photo-app",
+          "title": "写真アプリ",
+          "description": "スマートフォンで商品写真を撮影する方法"
+        },
+        {
+          "id": "05-grid-view",
+          "title": "グリッド表示",
+          "description": "商品をグリッド形式で表示する方法"
+        }
+      ]
+    }
+  }
+}
